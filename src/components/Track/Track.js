@@ -11,7 +11,11 @@ import styles from './styles'
 const Track = props => {
 
     function playTrack(url) {
-        SoundPlayer.playUrl(url)
+        try {
+            SoundPlayer.playUrl(url)
+        } catch (e) {
+            console.log(`cannot play the sound file`, e)
+        }
     }
 
     return (

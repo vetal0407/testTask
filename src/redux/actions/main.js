@@ -6,7 +6,4 @@ export const fetchSongsSuccess = data => ({
     type: FETCH_SONGS.SUCCESS,
     data
 })
-export const fetchSongsError = (e) => ({
-    type: FETCH_SONGS.ERROR,
-    error: e
-})
+export const fetchSongsError = (e) => console.log(e)
